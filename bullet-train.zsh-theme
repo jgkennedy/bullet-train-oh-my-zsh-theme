@@ -573,7 +573,7 @@ prompt_time() {
   fi
 
   if [[ $BULLETTRAIN_TIME_12HR == true ]]; then
-    prompt_segment $BULLETTRAIN_TIME_BG $BULLETTRAIN_TIME_FG %D{%r}
+    prompt_segment $BULLETTRAIN_TIME_BG $BULLETTRAIN_TIME_FG %D{%r %Z}
   else
     prompt_segment $BULLETTRAIN_TIME_BG $BULLETTRAIN_TIME_FG %D{%T}
   fi
